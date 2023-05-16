@@ -1,6 +1,6 @@
 # SCoDA
 > SCoDA: Domain Adaptive Shape Completion for Real Scans <br />
-> [GAP Lab](https://gaplab.cuhk.edu.cn/) [Yushuang Wu](https://scholar.google.com/citations?hl=zh-CN&user=x5gpN0sAAAAJ)
+> [GAP Lab](https://gaplab.cuhk.edu.cn/), [Yushuang Wu](https://scholar.google.com/citations?hl=zh-CN&user=x5gpN0sAAAAJ)
 
 ![Teaser](teaser_2k.png)
 
@@ -20,6 +20,12 @@ If you find our code or paper useful for your project, please consider citing:
       year={2023},
     }
     
+## ScanSalon
+
+We build a new dataset, ScanSalon, for the shape completion of real scans, with 800 mesh-scan pairs in 6 classes: chair, desk, sofa, bed, lamp, car. We provide videos in our [project page](https://yushuang-wu.github.io/SCoDA/) for data sample visualization. 
+
+![Dataset](dataset_vis.png)
+    
 ## Install
 
-Our implementation is based on IF-Net as the basic framework for reconstruction. Refer to the ``Install'' part of [IF-Net](https://github.com/jchibane/if-net) for the installation of our method. 
+Our implementation is based on IF-Net as the basic framework for reconstruction. Please refer to the "Install" part of [IF-Net](https://github.com/jchibane/if-net) for the installation of our method. 
