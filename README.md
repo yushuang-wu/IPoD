@@ -25,6 +25,10 @@ If you find our code or paper useful for your project, please consider citing:
 We build a new dataset, ScanSalon, for the shape completion of real scans, with 800 mesh-scan pairs in 6 classes: chair, desk, sofa, bed, lamp, car. We provide videos in our [project page](https://yushuang-wu.github.io/SCoDA/) for data sample visualization. 
 
 ![Dataset](dataset_vis.png)
+
+> ScanSalon link: [Google Drive](https://drive.google.com/drive/folders/1JrBxlBufivinI5_Xyi-1wBz2quU-DThj?usp=sharing) (Real data only).
+> ShapeNet Data: Turn to [ShapeNet](https://shapenet.org) for ShapeNet data download.
+> Processing: Please refer to the README and scripts in the zip package.
     
 ## Install
 
