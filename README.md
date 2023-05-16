@@ -41,3 +41,5 @@ Our implementation is based on IF-Net as the basic framework for reconstruction.
 3. Following steps in data_processing/process.sh to preprocess all data. <br />
 4. Run train_ddp.sh to train the model in a parrallel way. <br />
 5. After training by around 30-50 epochs, run generate_ddp.sh to generate meshes in the test set. 
+
+![Methodology](method.png)
