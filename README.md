@@ -2,7 +2,7 @@
 > SCoDA: Domain Adaptive Shape Completion for Real Scans <br />
 > [GAP Lab](https://gaplab.cuhk.edu.cn/), [Yushuang Wu](https://scholar.google.com/citations?hl=zh-CN&user=x5gpN0sAAAAJ)
 
-![Teaser](teaser_2k.png)
+![Teaser](figures/teaser_2k.png)
 
 [Paper](https://arxiv.org/abs/2304.10179.pdf) - 
 [Project Website](https://yushuang-wu.github.io/SCoDA/) -
@@ -24,7 +24,7 @@ If you find our code or paper useful for your project, please consider citing:
 
 We build a new dataset, ScanSalon, for the shape completion of real scans, with 800 mesh-scan pairs in 6 classes: chair, desk, sofa, bed, lamp, car. We provide videos in our [project page](https://yushuang-wu.github.io/SCoDA/) for data sample visualization. 
 
-![Dataset](dataset_vis.png)
+![Dataset](figures/dataset_vis.png)
 
 > ScanSalon Data: At [Google Drive](https://drive.google.com/drive/folders/1JrBxlBufivinI5_Xyi-1wBz2quU-DThj?usp=sharing) (Real data only).  <br />
 > ShapeNet Data: Turn to [ShapeNet](https://shapenet.org) for synthetic data download.  <br />
@@ -42,4 +42,4 @@ Our implementation is based on IF-Net as the basic framework for reconstruction.
 4. Run train_ddp.sh to train the model in a parrallel way. <br />
 5. After training by around 30-50 epochs, run generate_ddp.sh to generate meshes in the test set. 
 
-![Methodology](method.png)
+![Methodology](figures/method.png)
