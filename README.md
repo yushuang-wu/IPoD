@@ -34,7 +34,10 @@ We build a new dataset, ScanSalon, for the shape completion of real scans, with 
 
 Our implementation is based on IF-Net as the basic framework for reconstruction. Please refer to the "Install" part of [IF-Net](https://github.com/jchibane/if-net) for the installation of our method. 
 
-## Data Preparation
+## Running
 
-1. Getting the water tight meshes following steps in data_processing/mesh-fusion.  <br />
-2. 
+1. Following steps in data_processing/mesh-fusion to get the water-tight ScanSalon meshes. <br />
+2. Following steps in [Mesh2PC](https://github.com/kochanha/Mesh-to-Pointcloud-using-Blensor) to get simulated scans from ShapeNet meshes. <br /> 
+3. Following steps in data_processing/process.sh to preprocess all data. <br />
+4. Run train_ddp.sh to train the model in a parrallel way. <br />
+5. After training by around 30-50 epochs, run generate_ddp.sh to generate meshes in the test set. 
