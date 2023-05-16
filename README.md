@@ -11,7 +11,7 @@ Published in CVPR 2023.
 
 #### Citation
 
-If you find our code or paper usful for your project, please consider citing:
+If you find our code or paper useful for your project, please consider citing:
 
     @inproceedings{wu2023scoda,
       title={SCoDA: Domain Adaptive Shape Completion for Real Scans},
@@ -21,3 +21,5 @@ If you find our code or paper usful for your project, please consider citing:
     }
     
 ## Install
+
+Our implementation is based on IF-Net as the basic framework for reconstruction. Refer to the ``Install'' part of [IF-Net](https://github.com/jchibane/if-net) for the installation of our method. 
