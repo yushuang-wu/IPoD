@@ -26,8 +26,8 @@ We build a new dataset, ScanSalon, for the shape completion of real scans, with 
 
 ![Dataset](dataset_vis.png)
 
-> ScanSalon link: [Google Drive](https://drive.google.com/drive/folders/1JrBxlBufivinI5_Xyi-1wBz2quU-DThj?usp=sharing) (Real data only).
-> ShapeNet Data: Turn to [ShapeNet](https://shapenet.org) for ShapeNet data download.
+> ScanSalon link: [Google Drive](https://drive.google.com/drive/folders/1JrBxlBufivinI5_Xyi-1wBz2quU-DThj?usp=sharing) (Real data only).  <br />
+> ShapeNet Data: Turn to [ShapeNet](https://shapenet.org) for ShapeNet data download.  <br />
 > Processing: Please refer to the README and scripts in the zip package.
     
 ## Install
