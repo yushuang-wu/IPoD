@@ -26,10 +26,15 @@ We build a new dataset, ScanSalon, for the shape completion of real scans, with 
 
 ![Dataset](dataset_vis.png)
 
-> ScanSalon link: [Google Drive](https://drive.google.com/drive/folders/1JrBxlBufivinI5_Xyi-1wBz2quU-DThj?usp=sharing) (Real data only).  <br />
-> ShapeNet Data: Turn to [ShapeNet](https://shapenet.org) for ShapeNet data download.  <br />
+> ScanSalon Data: At [Google Drive](https://drive.google.com/drive/folders/1JrBxlBufivinI5_Xyi-1wBz2quU-DThj?usp=sharing) (Real data only).  <br />
+> ShapeNet Data: Turn to [ShapeNet](https://shapenet.org) for synthetic data download.  <br />
 > Processing: Please refer to the README and scripts in the zip package.
     
 ## Install
 
 Our implementation is based on IF-Net as the basic framework for reconstruction. Please refer to the "Install" part of [IF-Net](https://github.com/jchibane/if-net) for the installation of our method. 
+
+## Data Preparation
+
+1. Getting the water tight meshes following steps in data_processing/mesh-fusion.  <br />
+2. 
