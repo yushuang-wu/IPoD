@@ -19,17 +19,17 @@ If you find our code or paper useful for your project, please consider citing:
       booktitle={The IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
       year={2023},
     }
-    
-## ScanSalon
+
+## ScanSalon Dataset
 
 We build a new dataset, ScanSalon, for the shape completion of real scans, with 800 mesh-scan pairs in 6 classes: chair, desk, sofa, bed, lamp, car. We provide videos in our [project page](https://yushuang-wu.github.io/SCoDA/) for data sample visualization. 
 
 ![Dataset](figures/dataset_vis.png)
 
-> ScanSalon Data: At [Google Drive](https://drive.google.com/drive/folders/1JrBxlBufivinI5_Xyi-1wBz2quU-DThj?usp=sharing) (Real data only).  <br />
+> ScanSalon Data: At [Google Drive](https://drive.google.com/file/d/1FhgKm3h6o6OITwqugQlLqQrAQRVswe6T/view?usp=sharing) (Updated on 9/22/2023) (paired data only).  <br />
 > ShapeNet Data: Turn to [ShapeNet](https://shapenet.org) for synthetic data download.  <br />
-> Processing: Please refer to the README and scripts in the zip package.
-    
+> Further details about ScanSalon: Please refer to the README and scripts in the ScanSalon zip package. <br />Refer to [here](https://github.com/I-am-Future/scansalon-preprocess-scripts) to find out how do we extract point clouds for this dataset. 
+
 ## Installation
 
 Our implementation is based on IF-Net as the basic framework for reconstruction. Please refer to the "Install" part of [IF-Net](https://github.com/jchibane/if-net) for the installation of our method. 
@@ -37,7 +37,7 @@ Our implementation is based on IF-Net as the basic framework for reconstruction.
 ## Running
 
 1. Following the steps in data_processing/mesh-fusion to get the water-tight ScanSalon meshes. <br />
-2. Following the steps in [Mesh2PC](https://github.com/kochanha/Mesh-to-Pointcloud-using-Blensor) to get simulated scans from ShapeNet meshes. <br /> 
+2. Following the steps in [Mesh2PC](https://github.com/kochanha/Mesh-to-Pointcloud-using-Blensor) to get simulated scans from ShapeNet meshes. <br />
 3. Following the steps in data_processing/process.sh to preprocess all data. <br />
 4. Run `train_ddp.sh` to train the model in a parrallel way. <br />
 5. After training by around 30-50 epochs, run `generate_ddp.sh` to generate meshes in the test set. 
