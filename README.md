@@ -28,7 +28,7 @@ We build a new dataset, ScanSalon, for the shape completion of real scans, with 
 
 > ScanSalon Data: At [Google Drive](https://drive.google.com/file/d/1FhgKm3h6o6OITwqugQlLqQrAQRVswe6T/view?usp=sharing) (Updated on 9/22/2023) (paired data only).  <br />
 > ShapeNet Data: Turn to [ShapeNet](https://shapenet.org) for synthetic data download.  <br />
-> Further details about ScanSalon: Please refer to the README and scripts in the ScanSalon zip package.
+> Further details about ScanSalon: Please refer to the README and scripts in the ScanSalon zip package. <br />Refer to [here](https://github.com/I-am-Future/scansalon-preprocess-scripts) to find out how do we extract point clouds for this dataset. 
 
 ## Installation
 
