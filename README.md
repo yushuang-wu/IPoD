@@ -1,21 +1,21 @@
-# SCoDA
-> SCoDA: Domain Adaptive Shape Completion for Real Scans <br />
+# IPoD
+> IPoD: Implicit Field Learning with Point Diffusion for Generalizable 3D Object Reconstruction from Single RGB-D Images<br />
 > [GAP Lab](https://gaplab.cuhk.edu.cn/), [Yushuang Wu](https://scholar.google.com/citations?hl=zh-CN&user=x5gpN0sAAAAJ)
 
 ![Teaser](figures/teaser_2k.png)
 
 [Paper](https://arxiv.org/abs/2304.10179.pdf) - 
-[Project Website](https://yushuang-wu.github.io/SCoDA/) -
+[Project Website](https://yushuang-wu.github.io/IPoD/) -
 [Arxiv](https://arxiv.org/abs/2304.10179) -
-Published in CVPR 2023.
+Published in CVPR 2024.
 
 #### Citation
 
 If you find our code or paper useful for your project, please consider citing:
 
-    @inproceedings{wu2023scoda,
-      title={SCoDA: Domain Adaptive Shape Completion for Real Scans},
-      author={Yushuang, Wu and Zizheng, Yan and Ce, Chen and Lai, Wei and Xiao, Li and Guanbin, Li and Yihao, Li and Shuguang, Cui and Xiaoguang, Han},
+    @inproceedings{wu2024ipod,
+      title={IPoD: Implicit Field Learning with Point Diffusion for Generalizable 3D Object Reconstruction from Single RGB-D Images},
+      author={Yushuang, Wu and Luyue, Shi and Ce, Chen and Lai, Wei and Xiao, Li and Guanbin, Li and Yihao, Li and Shuguang, Cui and Xiaoguang, Han},
       booktitle={The IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
       year={2023},
     }
