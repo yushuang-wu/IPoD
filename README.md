@@ -23,11 +23,10 @@ If you find our code or paper useful for your project, please consider citing:
 ## Methodlogy
 
 ![Method](figures/method.png)
-<img src="figures/denoise.png" alt="pic" style="width: 50%;">
 
 ## Denoising Visulization
 
-![Denoising](figures/denoise.png)
+<img src="figures/denoise.png" alt="pic" style="width: 60%;">
 
 ## Reconstruction Visualization
 
