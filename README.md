@@ -1,4 +1,4 @@
-# IPoD
+# IPoD: Implicit Field Learning with Point Diffusion
 > IPoD: Implicit Field Learning with Point Diffusion for Generalizable 3D Object Reconstruction from Single RGB-D Images<br />
 > [GAP Lab](https://gaplab.cuhk.edu.cn/), [Yushuang Wu](https://scholar.google.com/citations?hl=zh-CN&user=x5gpN0sAAAAJ)
 
@@ -22,7 +22,7 @@ If you find our code or paper useful for your project, please consider citing:
 
 ## Methodlogy
 
-![Methodology](figures/method.png)
+![Denoising](<img src="figures/denoise.png" alt="pic" style="width: 50%;">)
 
 ## Denoising Visulization
 
