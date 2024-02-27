@@ -73,7 +73,7 @@
               <span class="author-block">
                 <a href="https://gaplab.cuhk.edu.cn">Xiaoguang Han</a><sup>2,1,#</sup></span>
             </div>
-            <h1 style="font-size:23px;font-weight:bold">CVPR 2023</h1>
+            <h1 style="font-size:23px;font-weight:bold">CVPR 2024</h1>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>FNii,CUHKSZ,  </span>
@@ -86,7 +86,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2304.10179.pdf"
+                  <a href="https://arxiv.org/abs/to_be_released.pdf"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -95,7 +95,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2304.10179" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/to_be_released" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -104,7 +104,7 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/yushuang-wu/SCoDA"
+                  <a href="https://github.com/yushuang-wu/IPoD"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -126,9 +126,12 @@
       <div class="hero-body">
         <div align="center"> <img src="static/images/teaser.png" width="900px"> </div>
         <div class="content has-text-centered">
-          An illustration of the proposed task SCoDA: domain adaptive shape completion, which aims to transfer the knowledge in the
-          synthetic domain to the reconstruction of noisy and incomplete real point clouds. For the proposed task, a dataset, ScanSalon, 
-          with paired real scans and 3D shape models is contributed.
+          Our work focuses on the task of generalizable 3D object
+          reconstruction from a single RGB-D image. The proposed method
+          conducts implicit field learning with point diffusion that iteratively
+          denoises a point cloud as adaptive query points for better implicit
+          field learning, which leads to high reconstruction quality on both
+          the global shape and fine details.
         </div>
       </div>
     </div>
@@ -141,23 +144,27 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
-            3D shape completion from point clouds is a challenging
-            task, especially from scans of real-world objects. Considering 
-            the paucity of 3D shape ground truths for real scans, existing 
-            works mainly focus on benchmarking this task on synthetic data, 
-            e.g. 3D computer-aided design models. However, the domain gap 
-            between synthetic and real data limits
-            the generalizability of these methods. Thus, we propose a
-            new task, SCoDA, for the domain adaptation of real scan
-            shape completion from the synthetic domain. A new dataset,
-            ScanSalon, is contributed with a bunch of elaborate 3D
-            models created by skillful artists according to given scans.
-            To address this new task, we propose a novel cross-domain
-            feature fusion method for knowledge transfer and a novel
-            volume-consistent self-training framework for robust learning 
-            from real data. Extensive experiments are conducted
-            for existing methods and the proposed method is effective to
-            bring an improvement of 6%∼7% mIoU.
+            Generalizable 3D object reconstruction from single-view
+            RGB-D images remains a challenging task, particularly
+            with real-world data. Current state-of-the-art methods 
+            develop Transformer-based implicit field learning, necessitating 
+            an intensive learning paradigm that requires dense
+            query-supervision uniformly sampled throughout the entire
+            space. We propose a novel approach, IPoD, which harmonizes 
+            implicit field learning with point diffusion. This
+            approach treats the query points for implicit field learning 
+            as a noisy point cloud for iterative denoising, allowing 
+            for their dynamic adaptation to the target object shape.
+            Such adaptive query points harness diffusion learning’s capability 
+            for coarse shape recovery and also enhances the implicit 
+            representation’s ability to delineate finer details. 
+            Besides, an additional self-conditioning mechanism is designed 
+            to use implicit predictions as the guidance of diffusion 
+            learning, leading to a cooperative system. Experiments 
+            conducted on the CO3D-v2 dataset affirm the superiority of 
+            IPoD, achieving 7.8% improvement in F-score and 28.6% in 
+            Chamfer distance over existing methods. The generalizability
+            of IPoD is also demonstrated on the MVImgNet dataset.
           </div>
         </div>
       </div>
@@ -294,11 +301,11 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{wu2023scoda,
-  title={SCoDA: Domain Adaptive Shape Completion for Real Scans},
-  author={Yushuang, Wu and Zizheng, Yan and Ce, Chen and Lai, Wei and Xiao, Li and Guanbin, Li and Yihao, Li and Shuguang, Cui and Xiaoguang, Han},
+      <pre><code>@inproceedings{wu2023ipod,
+  title={IPoD: Implicit Field Learning with Point Diffusion for Generalizable 3D Object Reconstruction from Single RGB-D Images},
+  author={Yushuang, Wu and Luyue, Shi and Junhao, Cai and Weihao, Yuan and Lingteng, Qiu and Zilong, Dong and Liefeng, Bo and Shuguang, Cui and Xiaoguang, Han},
   booktitle={The IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
-  year={2023}}</code></pre>
+  year={2024}}</code></pre>
     </div>
   </section>
 
