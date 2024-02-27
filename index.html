@@ -55,7 +55,7 @@
             <h1 class="title is-1 publication-title">IPoD: Implicit Field Learning with Point Diffusion for Generalizable 3D Object Reconstruction from Single RGB-D Images</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=x5gpN0sAAAAJ">Yushuang Wu</a><sup>1,2</sup>, </span>
+                <a href="https://yushuang-wu.github.io">Yushuang Wu</a><sup>1,2</sup>, </span>
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=Dt5LAqcAAAAJ">Luyue Shi</a><sup>1</sup>, </span>
               <span class="author-block">
@@ -181,119 +181,95 @@
         <div class="column is-full-width">
           
           <div class="column is-full-width">
-            <!-- Dataset Exhibition -->
-            <h2 class="title is-3">1. Dataset Exhibition of ScanSalon</h2>
-            <div align="center"> <img src="static/images/dataset_vis.png" width="900px"> </div>
+            <!-- Method Illustration -->
+            <h2 class="title is-3">1. Methodology</h2>
+            <div align="center"> <img src="static/images/method.png" width="900px"> </div>
             <div class="content has-text-centered">
-            Visualization of samples in the proposed ScanSalon dataset.
-          </div>
-          
+              Overview of the proposed method. The network takes a single-view image and a partial point cloud unprojected from the image
+              according to the depth information as the input. A bunch of points are sampled both as a noisy point cloud for point diffusion learning and
+              also as query points for implicit field learning. The proposed self-conditioning mechanism leverages the implicit predictions to reversely
+              assist denoising. The reconstruction result can be obtained via iteratively conducting implicit predicting and denoising concurrently.
+            </div>
+
+            <div align="center"> <img src="static/images/method_enc.png" width="500px"> </div>
+            <div class="content has-text-centered">
+              Illustration of the encoding of the input image I, the
+              partial point cloud P, and the noisy sample Xt, and the proposed
+              self-conditioning operation. ⊗ denotes the affine operation.
+            </div>
           
 
-          <div class="content has-text-centered">
-            <video class="video-fluid w-100" controls autoplay loop muted>
-              <source src="static/videos/real_scan.mp4" type="video/mp4"  width="750px" />
-            </video>
-            <p>Real Scans</p>
-          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="content has-text-centered">
-            <video class="video-fluid w-100" controls autoplay loop muted>
-              <source src="static/videos/mesh.mp4" type="video/mp4"  width="750px" />
-            </video>
-            <p>Created Meshes</p>
-          </div>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          
+          <div class="column is-full-width">
+            <!-- Results -->
+            <h2 class="title is-3">2. Denoising Visualization</h2>
+            <div align="center"> <img src="static/images/denoise.png" width="500px"> </div>
+            <div class="content has-text-centered">
+              Visualization of the denoising process (t={1000, 750,
+              500, 250, 0}) of our method in inferring. Note we only sample 2k
+              points in each noisy sample for better visualization. The darkness
+              of each point indicates the magnitude of the predicted UDF value
+              (the smaller, the darker) at this position.
+            </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          
+          <div class="column is-full-width">
+            <!-- Results -->
+            <h2 class="title is-3">3. Reconstruction Visualization</h2>
+            <div align="center"> <img src="static/images/held_out1.png" width="900px"> </div>
+            <div align="center"> <img src="static/images/held_out2.png" width="900px"> </div>
+            <div class="content has-text-centered">
+              Visualization of reconstructions by IPoD (Ours2) on CO3D-v2 held-out categories, with comparisons with the SOTA method NU-MCC.
+            </div>
+
+
+
+            <div align="center"> <img src="static/images/held_in1.png" width="900px"> </div>
+            <div align="center"> <img src="static/images/held_in2.png" width="900px"> </div>
+            <div class="content has-text-centered">
+              Visualization of reconstructions by IPoD (Ours2) on CO3D-v2 held-in categories, with comparisons with the SOTA method NU-MCC.
+            </div>
+
+
+
+            <div align="center"> <img src="static/images/mvimgnet.png" width="900px"> </div>
+            <div class="content has-text-centered">
+              Visualization of reconstructions (by inference without fine-tuning) by IPoD (Ours2) on the MVImgNet dataset, with comparisons with the SOTA method NU-MCC.
+            </div>
+          
 
         </div>
       </div>
     </div>
   </section>
     
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-
-          <div class="column is-full-width">
-            <!-- Dataset Exhibition -->
-            <h2 class="title is-3">2. Method and Results</h2>
-            <div align="center"> <img src="static/images/method.png" width="900px"> </div>
-            <div class="content has-text-centered">
-            Overview of the proposed method. Two IF-Net encoders are used for the source and the target domain, respectively, and they
-            share an implicit function decoder. The cross-domain feature fusion (CDFF) works by adaptively combining the global-level and local-level
-            knowledge learned from the source and target domain, respectively. The volume-consistency self-training (VCST) works by enforcing the
-            prediction consistency between two different augmented views to learn the local details.
-          </div>
-            
-            
-          <div class="content has-text-centered">
-            <div align="center"> <img src="static/images/results_vis2.png" width="900px"> </div>
-            <p>Qualitative comparison between our method and IF-Net on shape completion with only 3% (left) and 5% labels (right) for training. </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
+  
     
    
   
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          
-          <div class="column is-full-width">
-            <!-- Dataset Exhibition -->
-            <h2 class="title is-3">3. ScanSalon Sample Visulization</h2>
-          </div>
-
-          <div class="content has-text-centered">
-            <video  width="750px" class="video-fluid w-100" controls autoplay loop muted>
-              <source src="static/videos/sofa.mp4" type="video/mp4" />
-            </video>
-            <p>Class: Sofa</p>
-          </div>
-
-          <div class="content has-text-centered">
-            <video width="750px" class="video-fluid w-100" controls autoplay loop muted>
-              <source src="static/videos/bed.mp4" type="video/mp4" />
-            </video>
-            <p>Class: bed</p>
-          </div>
-
-          <div class="content has-text-centered">
-            <video width="750px" class="video-fluid w-100" controls autoplay loop muted>
-              <source src="static/videos/chair.mp4" type="video/mp4" />
-            </video>
-            <p>Class: Chair</p>
-          </div>
-
-          <div class="content has-text-centered">
-            <video width="750px" class="video-fluid w-100" controls autoplay loop muted>
-              <source src="static/videos/desk.mp4" type="video/mp4" />
-            </video>
-            <p>Calss: Desk</p>
-          </div>
-
-          <div class="content has-text-centered">
-            <video width="750px" class="video-fluid w-100" controls autoplay loop muted>
-              <source src="static/videos/lamp.mp4" type="video/mp4" />
-            </video>
-            <p>Class: Lamp</p>
-          </div>
-
-          <div class="content has-text-centered">
-            <video width="750px" class="video-fluid w-100" controls autoplay loop muted>
-              <source src="static/videos/car.mp4" type="video/mp4" />
-            </video>
-            <p>Class: Car</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
+  
     
     
   
