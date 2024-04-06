@@ -20,7 +20,7 @@ If you find our code or paper useful for your project, please consider citing:
       year={2024},
     }
 
-This work was done by Yushuang Wu during intership at Alibaba Group supervised by Weihao Yuan.
+This work was done by Yushuang Wu during intership at Alibaba Group supervised by Weihao Yuan. [Official Code Link](https://github.com/alibaba/ipod).
 
 
 ## Installation
