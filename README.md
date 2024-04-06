@@ -66,7 +66,7 @@ To run visualization, use `--run_viz` flag. The output will be generated to the 
 
 ## Methodology
 
-![Method](figures/method.png)
+![Method](figures/method2.png)
 
 ## Denoising Visulization
 
