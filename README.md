@@ -20,7 +20,51 @@ If you find our code or paper useful for your project, please consider citing:
       year={2024},
     }
 
-## Methodlogy
+This work was done by Yushuang Wu during intership at Alibaba Group supervised by Weihao Yuan.
+
+
+## Installation
+Please see [INSTALL.md](INSTALL.md) for information on installation.
+
+
+## Data
+Please see [DATASET.md](DATASET.md) for information on data preparation.
+
+## Pretrained models
+
+To download the pretrained models (on CO3D-v2), run:
+
+```
+mkdir ckpts
+
+cd ckpts
+
+wget https://virutalbuy-public.oss-cn-hangzhou.aliyuncs.com/share/YushuangWu/IPoD_ckpts/ipod_transformer_co3d.pth
+
+```
+
+
+## CO3D-v2 Experiments
+
+To train from scratch, run:
+```
+sh train.sh
+```
+
+The arguements are used the same with ones in the repository of [NU-MCC](https://github.com/sail-sg/numcc).
+
+For evaluation/inference:
+
+```
+sh eval.sh
+```
+
+The argument `--n_query_udf` defines the total number of points in the final output. In general, the higher numbers result in more uniform point distribution and also longer inference time. 
+
+
+To run visualization, use `--run_viz` flag. The output will be generated to the folder specified in `--exp_name`. Visualization/evaluation from one class can be specified using `--one_class [OBJECT_CLASS]` flag. Point clouds can be exported by activating `--save_pc` flag.
+
+## Methodology
 
 ![Method](figures/method.png)
 
@@ -43,3 +87,6 @@ On CO3Dv2 held-in categories:<br />
 On MVImgNet:<br />
 
 ![Results5](figures/mvimgnet.png)
+
+## Acknowledgement
+This codebase is mainly inherited from the repositories of [NU-MCC](https://github.com/sail-sg/numcc) and [MCC](https://github.com/facebookresearch/MCC).
