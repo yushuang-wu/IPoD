@@ -7,7 +7,7 @@
 [Paper](https://arxiv.org/abs/2304.10179.pdf) - 
 [Project Website](https://yushuang-wu.github.io/IPoD/) -
 [Arxiv](https://arxiv.org/abs/2404.00269) -
-Published in CVPR 2024.
+Published in CVPR 2024 **(Highlight)**.
 
 #### Citation
 
