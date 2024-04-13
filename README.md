@@ -74,6 +74,8 @@ To run visualization, use `--run_viz` flag. The output will be generated to the 
 
 ## Reconstruction Visualization
 
+<img src="figures/demo.gif" alt="pic" style="width: 100%;">
+
 On CO3Dv2 held-out categories:<br />
 
 ![Results1](figures/held_out1.png)
