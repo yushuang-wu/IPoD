@@ -70,7 +70,9 @@ To run visualization, use `--run_viz` flag. The output will be generated to the 
 
 ## Denoising Visulization
 
+<p class="aligncenter">
 <img src="figures/denoise.png" alt="centered image" style="width: 60%;">
+</p>
 
 ## Reconstruction Visualization
 
