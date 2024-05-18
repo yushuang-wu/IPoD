@@ -4,7 +4,7 @@
 
 ![Teaser](figures/teaser.png)
 
-[Paper](https://arxiv.org/abs/2304.10179.pdf) - 
+[Paper](https://arxiv.org/pdf/2404.00269) - 
 [Project Website](https://yushuang-wu.github.io/IPoD/) -
 [Arxiv](https://arxiv.org/abs/2404.00269) -
 Published in CVPR 2024 **(Highlight)**.
